@@ -1,0 +1,42 @@
+{% load static %}
+
+<!--Navbar -->
+<nav class="sticky-top txt navbar navbar-expand-lg navbar-dark orange">
+    <div class="container">
+        <ul class="navbar-nav mr-auto nav-flex-icons">
+            <li class="nav-item avatar">
+                <a class="nav-link p-0" href="#">
+                <img src="{% static 'img/logo.jpg' %}" class="rounded-circle z-depth-0"
+                    alt="avatar image" height="70">
+                </a>
+            </li>
+        </ul>
+        <a class="pl-3 mr-auto navbar-brand brand pt-2 text-white font-weight-bold" href="">Kager</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+        aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white font-weight-bold" href="{% url 'core:home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white font-weight-bold" href="{% url 'core:about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white font-weight-bold" href="">Blog</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <div class="btn-submit">
+                        <a href="{% url 'core:contact' %}">
+                            <button type="button" class="round text-capitalize text-white btn btn-outline-white float-right font-weight-bold">Contacts</button>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--/.Navbar -->
